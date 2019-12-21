@@ -1,0 +1,16 @@
+<view class='list-item' catchtap='navToDetail' data-post-id="{{teamdata.id}}">
+  <view class='info'>
+    <view class='info_title'>{{teamdata.game_name}}</view>
+    <view class='info_require'>要求:
+    <view class='content'>{{teamdata.req}}</view>
+    </view>
+  </view>
+
+  <view class='star_container' mode='widthFix'>
+    <image src='{{collect?"/imgs/star3.png":"/imgs/star2.png"}}' class='star {{changeAgree?"star-scale":""}}' catchtap='agree' data-post-id="{{teamdata.id}}"></image>
+    <view class='info_state'>
+      <view>已招募 </view>
+      <view class='info_num'>({{teamdata.team_num}}/{{teamdata.max_num}})</view>
+    </view>
+  </view>
+</view>
