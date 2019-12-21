@@ -1,0 +1,35 @@
+/* pages/me/feedback/feedback.wxss */
+
+.container {
+  color:rgb(165, 160, 160);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(238, 238, 238);
+}
+
+.content {
+  width: 640rpx;
+  height: 320rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  background: rgb(255, 255, 255);
+  padding: 20rpx;
+  margin: 60rpx;
+  border: 1px dashed #818181;
+}
+
+.btn {
+  width: 50%;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
+  background-color:#93d3fa;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 50rpx;
+}
+.btn::after{
+  border: none;
+}

@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#93D3FA",
+  "navigationBarTitleText": "搜索结果",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "teamitem": "/components/team-item/team-item"
+  }
+}

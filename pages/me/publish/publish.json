@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#93D3FA",
+  "navigationBarTitleText": "我的队伍",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "item": "/components/my-publish-item/my-publish-item"
+  }
+}

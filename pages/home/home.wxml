@@ -1,0 +1,21 @@
+
+<view class='back'>
+  <view class='center'>
+    <swiper class='swiper' indicator-dots='true' autoplay='true' interval='3000' circular='true'>
+      <block wx:for="{{swiper_imgs}}"  wx:key="{{index}}">
+        <swiper-item class="swiper_item">
+          <image src='{{item}}' class='swiper_img' mode='aspectFill'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+
+<view class='thenew'>最新发布</view>
+
+<view class='list_container'>
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <teamitem teamdata="{{item}}"></teamitem>
+  </block>
+</view>
+

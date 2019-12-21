@@ -1,0 +1,25 @@
+<!--pages/me/applyDetail/applyDetail.wxml-->
+<view class='container'>
+  <view class='detail_container'>
+    <view class='detail_info'>
+      <view class='detail_item'>
+        <text class='detail_title'>昵称:</text> {{detail.name}}</view>
+      <view class='detail_item'>
+        <text class='detail_title'>联系方式:</text> {{detail.contact}}</view>
+    </view>
+    <view class='req'>
+      <text class='detail_title'>个人介绍</text>
+      <text>\n {{detail.reason}}</text>
+    </view>
+  </view>
+</view>
+<!-- <block wx:if="{{status==='wait'}}">
+<button class='btn' catchtap='onAgree'data-msg-id="{{id}}" data-team-id="{{team_id}}">同意</button>
+<button class='btn' catchtap='onRefuse' data-msg-id="{{id}}" data-team-id="{{team_id}}">拒绝</button>
+</block>
+<block wx:elif="{{status==='agree'}}">
+<button class='btn' disabled='true'>已同意</button>
+</block>
+<block wx:else>
+<button class='btn' disabled='true'>已拒绝</button>
+</block> -->

@@ -1,0 +1,21 @@
+<!--pages/me/reqDetail/reqDetail.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view>name: {{jopen_id}}</view>
+    <view>reason: {{reason}}</view>
+  </view>
+  <view class='btn-box'>
+    <block wx:if="{{status === 'wait'}}">
+      <button catchtap="handleAgree" data-msg-id="{{id}}">同意</button>
+      <button catchtap="handleRefuse" data-msg-id="{{id}}">拒绝</button>
+    </block>
+    <block wx:elif="{{status==='agree'}}">
+      <button disabled='true'>已同意</button>
+    </block>
+    <block wx:else>
+      <button disabled='true'>已拒绝</button>
+    </block>
+  </view>
+
+
+</view>

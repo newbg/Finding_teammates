@@ -1,0 +1,113 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Microsoft YaHei";
+  color: #1a2a3a;
+}
+
+.team_name {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game_name {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sort {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team_num {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tele_num {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team_info {
+  height: 300rpx;
+  border-bottom: 1px solid;
+}
+
+.require {
+  height: 300rpx;
+  border-bottom: 1px solid;
+}
+
+.btn {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 80%;
+  height: 110rpx;
+  color: #ddd;
+  background-color: rgb(0, 122, 204);
+}
+ */
+
+page {
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  width: 85%;
+  margin-top: 10%;
+  border-radius: 5px;
+  border: 1px dashed;
+  color: #818181;
+  padding-left: 20rpx;
+}
+
+.detail_item {
+  width:95%;
+  margin-bottom: 30rpx;
+  border-bottom: 1px solid #eeeeee;
+  color: #818181;
+}
+
+
+.req {
+  width: 570rpx;
+  height: 600rpx;
+}
+
+.detail_title {
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 20rpx;
+}
+
+.detail_info {
+  margin-top: 30rpx;
+}
+

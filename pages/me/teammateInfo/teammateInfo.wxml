@@ -1,0 +1,49 @@
+<!-- <view class='container'>
+  <text class='title'>队员信息\n</text>
+  <view class='list_container'>
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <image src='{{item.avatarUrl}}' class='img'></image>
+      <text class='name'>{{item.name}}</text>
+    </block>
+  </view>
+</view> -->
+
+<view class="container" wx:if="{{flag==true}}">
+  <block wx:for="{{list}}" wx:key="">
+
+    <view class="table-cell-container">
+
+      <view class="table-content-container" style="left:-{{offsetRecord.index == index ? offsetRecord.offset : 0}}rpx;" bindtouchstart="onTableCellTouchStart" bindtouchmove="onTableCellTouchMove" bindtouchend="onTableCellTouchEnd" bindtouchcancel="onTableCellTouchEnd"
+        data-index="{{index}}" bindtap='naviTodetail' data-jopenid="{{item.jopen_id}}">
+
+        <!--可以在这里根据你的表格来进行UI布局,并可以绑定点击事件,切不可给"table-content-container"绑定点击事件-->
+
+        <view class="table-info-container">
+          <image src="{{item.avatarUrl}}"></image>
+          <view class='name'>{{item.name}}</view>
+        </view>
+        <view class="arrow"></view>
+
+      </view>
+
+      <view class="table-delete-container" bindtap="onDeleteButtonTapped" data-index="{{index}}" data-jopenid="{{item.jopen_id}}">
+
+        <text>踢出队伍</text>
+
+      </view>
+
+      <view class="table-separator"></view>
+
+    </view>
+
+  </block>
+
+</view>
+
+<view wx:else="{{flag==false}}" class='e_container'>
+  <image src='/imgs/empty.png' class='empty'></image>
+  <view class='tip'>快去招募合适的队友吧</view>
+  <!-- <view class='team' bindtap='naviadd'>创建队伍</view>
+  <view class='team' style='margin-top:50rpx' bindtap='navifind'>寻找队伍</view> -->
+</view>
+

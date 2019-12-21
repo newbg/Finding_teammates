@@ -1,0 +1,44 @@
+<!-- <view class='container'>
+  <view class='team_name'>队伍名称: {{item.team_name}}</view>
+  <view class='game_name'>参加赛事: {{item.game_name}}</view>
+  <view class='sort'>类别: {{item.sort}}</view>
+  <view class='team_num'>队伍人数: {{item.team_num}}/{{item.max_num}}</view>
+  <view class='team_info'>队伍信息: {{item.team_info}}</view>
+  <view class='tele_num'>联系方式: {{item.tele_num}}</view>
+  <view class='require'>招募要求: {{item.req}}</view>
+  <button class='btn'>申请入队</button>
+</view> -->
+
+<view class='container'>
+  <view class='detail_container'>
+    <view class='detail_state'>
+      <view detail_people>已招募 ({{item.team_num}}/{{item.max_num}})</view>
+      <view class='star_container'>
+        <image src='{{caption? "/imgs/flag.png":""}}' class='star'></image>
+      </view>
+    </view>
+    <view class='detail_info'>
+      <view class='detail_item'>
+        <text >比赛名称:  </text>{{item.game_name}}</view>
+      <view class='detail_item'>
+        <text>类别:  </text> {{item.sort}}</view>
+      <view class='detail_item'>
+        <text>联系方式:  </text> {{item.tele_num}}</view>
+      <!-- <view class='detail_item'>
+        <text class='detail_title'>队伍信息:</text> {{item.team_info}}</view> -->
+    </view>
+    <view class='req1'>
+      <!-- <view class='detail_item'> </view>-->
+      <text>队长介绍:</text>
+      <text>\n {{item.team_info}} \n</text>
+    </view>
+    <view class='req2'>
+      <text>入队要求:</text>
+      <text>\n {{item.req}}</text>
+    </view>
+  </view>
+  <button bindtap='applyTeam' wx:if="{{flag===1}}" style='display:none'></button>
+  <button class='btn' bindtap='applyTeam' wx:elif="{{flag == 2}}">申请入队</button>
+  <button class='btn2' wx:else="{{flag===3}}">已申请</button>
+  <!-- <button class='btn' bindtap='applyTeam' wx:if="{{!flag}}" wx:else="{{item.ap}}">已申请</button> -->
+</view>

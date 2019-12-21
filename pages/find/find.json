@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#93d3fa",
+  "navigationBarTitleText": "发现",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "teamitem": "/components/team-item/team-item"
+  }
+}

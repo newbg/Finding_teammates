@@ -1,0 +1,17 @@
+<!--pages/modal/modal.wxml-->
+<!-- <view class="apply">
+  <image class='img' src="/imgs/e.png" mode="widthFix"></image>
+  <view class="modalDlg">
+    <text>开启属于你的寻队之旅吧</text>
+  </view>
+  <view class='btn-grp'>
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='go'>开始使用</button>
+  </view>
+</view> -->
+
+
+<!-- <button bindtap="submit">点我弹窗</button> -->
+
+<view class='container'>
+  <button open-type="getUserInfo" class='tip' bindgetuserinfo="bindGetUserInfo">点击进入</button>
+</view>

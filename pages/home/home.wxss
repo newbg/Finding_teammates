@@ -1,0 +1,136 @@
+
+Page {
+  background-color: #eeeeee;
+}
+
+.swiper_img {
+  border-radius: 5px;
+  width: 100%;
+  height: 350rpx;
+}
+
+.swiper {
+  border-width: 3px;
+  border-color: #ffffff;
+  border-radius: 5px;
+  margin-top:80rpx;
+  width:90%;
+  height: 350rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.back{
+  height:25%;
+  width:100%;
+  background-color: #93d3fa;
+  position: absolute;
+  z-index: -1;
+}
+
+.thenew{
+  width:84%;
+  height:5%;
+  background-color:#eeeeee;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 67%;
+  color: #a5a5a5;
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+  border-bottom: 1px solid #a5a5a5;
+  margin-left: 8%;
+}
+
+.list_container {
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  margin-top:75%;
+  margin-left: 5%;
+}
+
+/*-----------------------
+
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* mask */
+
+/* pages/modal/modal.wxss */
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg {
+  width: 580rpx;
+  height: 620rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 40rpx;
+  z-index: 9999;
+  margin: -370rpx 50rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  /* opacity: 0.6; */
+}
+
+.btn-grp {
+  width: 580rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40rpx;
+}
+
+.btn-grp button {
+  /* vertical-align: middle; */
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.btn-grp button:first-of-type {
+  margin-right: 40rpx;
+}
+
+.go {
+  background-color: #93d3fa;
+}
+
+.cancel {
+  background-color: rgb(204, 204, 204);
+}

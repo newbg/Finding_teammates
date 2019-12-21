@@ -1,0 +1,88 @@
+/* pages/modal/modal.wxss */
+
+.apply {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+.img {
+  width: 100%;
+}
+
+.modalDlg {
+  position: fixed;
+  margin-top: 70%;
+  color: #8f8f8f;
+  font-size: 25px;
+  /* opacity: 0.6; */
+}
+
+.btn-grp {
+  height: 400rpx;
+  background-color: #fff;
+  margin-top: 30%;
+  width: 45%;
+}
+
+.go {
+  background-color: #93d3fa;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 20%;
+}
+
+.go::after {
+  border: none;
+}
+
+/*--------------------------*/
+
+.container {
+  /* background-color: red; *//* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  background-repeat: no-repeat; /** 不重复*/
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://webexercise.xyz/weixin/picture/start.png');
+}
+
+.tip {
+  border: 1.5px solid #c6c6c6;
+  width: 100rpx;
+  height: 365rpx;
+  font-size: 28px;
+  color: #c6c6c6;
+  margin-left: 495rpx;
+  position: absolute;
+  bottom: 545rpx;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip::after {
+  border: none;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  padding: 0rpx;
+  margin: 0rpx;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+button::after {
+  /*button的边框样式是通过::after方式实现的*/
+  border: none;
+}

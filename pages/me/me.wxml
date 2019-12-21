@@ -1,0 +1,29 @@
+<view class='container'>
+    <view class='avatar'>
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <block wx:if="{{logined}}">
+      <text>{{userInfo.nickName}}</text>
+      </block>
+      <block wx:else>
+        <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击登录</button>
+      </block>
+    </view>
+    <view class='nav-list'>
+      <view catchtap="toDetail" data-target="publish" class="nav-item">
+      我的队伍
+      <view class='arrow'></view>
+      </view>
+      <view catchtap="toDetail" data-target="collect" class="nav-item">
+      我的收藏
+      <view class='arrow'></view>
+      </view>
+      <view catchtap="toDetail" data-target="notice" class="nav-item">
+      收件箱
+      <view class='arrow'></view>
+      </view>
+      <view catchtap="toDetail" data-target="feedback" class="nav-item">
+      意见反馈
+      <view class='arrow'></view>
+      </view>
+    </view>
+</view>

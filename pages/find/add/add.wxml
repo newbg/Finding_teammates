@@ -1,0 +1,44 @@
+<form bindsubmit="formSubmit">
+  <view class="container">
+    <view class='add_info'>
+
+        <view class='add_item'>
+          <view class='add_title'>
+            <text style='color:red'>*</text>比赛名称:</view>
+          <input class='input' name="game_name" value="{{data}}"></input>
+        </view>
+
+        <view class='add_item'>
+          <view class='add_title'>
+            <text style='color:red'>*</text>类别:
+          </view>
+          <input class='input' name="sort" value="{{data}}"></input>
+        </view>
+
+        <view class='add_item'>
+          <view class='add_title'>
+            <text style='color:red'>*</text>所需人数:</view>
+          <input class='input' type='number' maxlength="-1" name="max_num" value="{{data}}"></input>
+        </view>
+
+        <view class='add_item'>
+          <view class='add_title'>
+            <text style='color:red'>*</text>联系方式:</view>
+          <input class='input' type='number'  name="tele_num" value="{{data}}"></input>
+        </view>
+
+        <view class='bacgrond'>
+          <view class='textarea_text'>
+            <text style='color:red'>*</text> 队伍信息: </view>
+          <textarea class='require' maxlength="250" name="team_info" value="{{data}}"></textarea>
+        </view>
+
+      <view  class='bacgrond'>
+        <view class='textarea_text'>
+          <text style='color:red'>*</text> 入队要求: </view>
+        <textarea class='require' maxlength="300" name="req" value="{{data}}"></textarea>
+      </view>
+    </view>
+      <button class='btn' formType="submit">确认发布</button>
+  </view>
+</form>

@@ -1,0 +1,121 @@
+Page {
+  background-color: #eeeeee;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.add {
+  position: fixed;
+  bottom: 60rpx;
+  right: 60rpx;
+  background-color: #F18282;
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0px 0px 5px 2px rgb(199, 199, 199);
+}
+
+.list_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------------------- */
+
+.weui-search-bar {
+  height: 150rpx;
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #93d3fa;
+  border-bottom: 1px solid #ffffff;
+}
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top:6px;
+}
+.weui-search-bar__form {
+  margin-top:50rpx;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.weui-search-bar__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  display: flex;
+  align-content:center;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-top:50rpx;
+  margin-left: 10px;
+  line-height: 28px;
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 15px;
+}
+

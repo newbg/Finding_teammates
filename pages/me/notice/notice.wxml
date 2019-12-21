@@ -1,0 +1,32 @@
+<!--pages/me/notice/notice.wxml-->
+<view class='container' wx:if="{{flag===true}}">
+  <view class='flex-box'>
+    <block wx:for="{{inbox_a}}" wx:key="{{index}}">
+      <view class='item {{item.status=="wait"?"todo":"done"}}' bindtap="toApplyDetail" data-msg-id="{{item.id}}">
+        <view class='title'>
+          <text style='font-weight:bold;font-size:18px'>{{item.name}}</text> 申请加入队伍</view>
+        <view wx:if="{{item.status=='agree'}}" class='state1'>已同意</view>
+        <view wx:elif="{{item.status=='refuse'}}" class='state1'>已拒绝</view>
+        <view wx:else class='state2'>待处理</view>
+      </view>
+    </block>
+
+    <!-- box b -->
+    <block wx:for="{{inbox_b}}" wx:key="{{index}}">
+      <view class='item done' bindtap="toTeamDetail" data-team-id="{{item.team_id}}" data-info="{{item}}">
+        <!-- <view class='title'>你被同意加入队伍{{item.id}}</view> -->
+        <view wx:if="{{item.status=='agree'}}">你被同意加入
+          <text style="font-weight: bold;">{{item.game_name}}</text> 队伍</view>
+        <view wx:elif="{{item.status=='refuse'}}">你被拒绝加入
+          <text style="font-weight: bold;">{{item.game_name}}</text> 队伍</view>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- box a -->
+<view wx:else="{{flag===false}}" class='e_container'>
+  <image src='/imgs/empty.png' class='empty'></image>
+  <view class='tip'>这里空空如也</view>
+  <!-- <view class='team' bindtap='naviadd'>创建队伍</view>
+  <view class='team' style='margin-top:50rpx' bindtap='navifind'>寻找队伍</view> -->
+</view>

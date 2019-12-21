@@ -1,0 +1,12 @@
+<view class='list_container' wx:if="{{flag==true}}">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <teamitem teamdata="{{item}}"></teamitem>
+  </block>
+</view>
+
+<view wx:else="{{flag==false}}" class='e_container'>
+  <image src='/imgs/empty.png' class='empty'></image>
+  <view class='tip'>抱歉,没有找到合适的结果</view>
+  <!-- <view class='team' bindtap='naviadd'>创建队伍</view>
+  <view class='team' style='margin-top:50rpx' bindtap='navifind'>寻找队伍</view> -->
+</view>

@@ -1,0 +1,5 @@
+<!--pages/me/feedback/feedback.wxml-->
+<view class='container'>
+  <textarea class='content' placeholder='留下你的意见吧~' bindinput="getFeedback"></textarea>
+  <button class='btn' bindtap='sendFeedback'>发送反馈</button>
+</view>

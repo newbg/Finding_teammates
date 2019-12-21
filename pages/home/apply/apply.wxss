@@ -1,0 +1,84 @@
+/* pages/home/apply/apply.wxss */
+
+page {
+  background-color: #eee;
+  color: #818181;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 80%;
+  margin-top: 60rpx;
+  border-radius: 5px;
+  border: 1px dashed;
+  padding-left: 35rpx;
+  color: #818181;
+}
+
+.contact {
+  margin-top: 50rpx;
+}
+
+radio-group {
+  margin-top: 30rpx;
+  margin-bottom:20rpx;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-left: 60rpx; */
+}
+
+.msg {
+  width:30%;
+  margin-top: 20rpx;
+}
+
+.input {
+  /* border: 1px solid; */
+  border-radius: 5px;
+  margin-right:55rpx;
+  width: 70%;
+  height: 60rpx;
+  margin-top: 30rpx;
+  background-color: #eeeeee;
+  padding-left: 20px;
+}
+
+.introduce {
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
+}
+
+.textarea {
+  margin-top: 40rpx;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  width: 85%;
+  background-color: #eeeeee;
+  padding: 20rpx;
+}
+
+.btn {
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  width: 50%;
+  color: #fff;
+  background-color: #93D3FA;
+  font-size: 20px;
+  font-weight:normal;
+}
+.btn::after{
+  border: none;
+}

@@ -1,0 +1,32 @@
+<view class='container'>
+  <view class='detail_container'>
+    <view class='detail_state'>
+      已招募 ({{item.team_num}}/{{item.max_num}})
+     </view>
+      <view class='btn'>
+       <button hover="true" hover-class='hvteammate_btn' class='teammate_btn' bindtap='teammateInfo'>成员信息</button>
+       <button hover="true" hover-class='hvchange_btn' class='change_btn' bindtap='changeInfo' data-teamid='{{team_id}}' wx:if="{{caption}}">修改信息</button>
+      </view>
+    
+    <view class='detail_info'>
+      <view class='detail_item'>
+        <text>比赛名称:</text> {{item.game_name}}</view>
+      <view class='detail_item'>
+        <text>类别:</text> {{item.sort}}</view>
+      <view class='detail_item'>
+        <text>联系方式:</text> {{item.tele_num}}</view>
+      <!-- <view class='detail_item'>
+        <text class='detail_title'>队伍信息:</text> {{item.team_info}}</view> -->
+    </view>
+    <view class='req1'>
+      <!-- <view class='detail_item'> </view>-->
+      <text>队长介绍:</text>
+      <text>\n {{item.team_info}} \n</text>
+    </view>
+    <view class='req2'>
+      <text>入队要求:</text>
+      <text>\n {{item.req}}</text>
+    </view>
+  </view>
+</view>
+

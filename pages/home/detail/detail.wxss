@@ -1,0 +1,155 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  background-color:#eeeeee;
+}
+
+.team_name {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game_name {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sort {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team_num {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tele_num {
+  height: 120rpx;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team_info {
+  height: 300rpx;
+  border-bottom: 1px solid;
+}
+
+.require {
+  height: 300rpx;
+  border-bottom: 1px solid;
+}
+
+.btn {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 80%;
+  height: 110rpx;
+  color: #ddd;
+  background-color: rgb(0, 122, 204);
+}
+ */   
+
+page {
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 85%;
+  margin-top: 60rpx;
+  border-radius: 5px;
+  border: 1px dashed;
+  color: #818181;
+}
+
+.detail_state {
+  margin-top: 35rpx;
+  width: 92%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid; */
+}
+
+.detail_item {
+  width:570rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.detail_info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.star {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.req1 {
+  height: 200rpx;
+  width: 570rpx;
+}
+
+.req2{
+  height: 300rpx;
+  width: 570rpx;
+  margin-top: 55rpx;
+}
+
+
+.btn {
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  width: 50%;
+  color: #fff;
+  background-color: #93d3fa;
+  font-size: 20px;
+}
+.btn::after{
+  border: none;
+}
+
+.btn2 {
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  width: 50%;
+  color: #fff;
+  background-color: #BFBFBF;
+  font-size: 20px;
+}
+.btn2::after{
+  border: none;
+}
+
